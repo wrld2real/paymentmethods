@@ -59,10 +59,10 @@ PAYPAL_LINK = "paypal.me/wrld2real"
 
 # Gift Card information
 GIFT_CARDS = {
-    "Amazon": 10,
-    "Steam": 10,
-    "Xbox": 10,
-    "Roblox": 10,
+    "Amazon": 15,
+    "Steam": 15,
+    "Xbox": 15,
+    "Roblox": 20,
 }
 
 # Paysafecard information
