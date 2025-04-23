@@ -150,7 +150,7 @@ async def paypal(ctx):
     
     embed.add_field(
         name="Amount",
-        value=f"${SYNTHX_PRICE:.2f} USD",
+        value=f"€{SYNTHX_PRICE:.2f} USD",
         inline=False
     )
     
@@ -178,7 +178,7 @@ async def giftcard(ctx):
     for card_name, card_value in GIFT_CARDS.items():
         embed.add_field(
             name=f"{card_name} Gift Card",
-            value=f"Required value: ${card_value:.2f} USD",
+            value=f"Required value: €{card_value:.2f} USD",
             inline=True
         )
     
@@ -240,14 +240,14 @@ async def list(ctx):
     # Add PayPal payment method
     embed.add_field(
         name="<:Paypal:1364314384079257654> PayPal",
-        value=f"**Price:** `${SYNTHX_PRICE:.2f} USD`\n**Link:** {PAYPAL_LINK}",
+        value=f"**Price:** `€{SYNTHX_PRICE:.2f} USD`\n**Link:** {PAYPAL_LINK}",
         inline=False
     )
     
     # Add Gift Card payment methods
     gift_text = ""
     for card_name, value in GIFT_CARDS.items():
-        gift_text += f"**{card_name}:** `${value:.2f} USD`\n"
+        gift_text += f"**{card_name}:** `€{value:.2f} USD`\n"
     embed.add_field(name="<:GiftCard:1364441655083667456> Gift Cards", value=gift_text, inline=False)
     
     # Add Paysafecard payment method
