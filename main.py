@@ -268,7 +268,7 @@ async def list(ctx):
 
 # Adding a help command to list all available commands
 @bot.command()
-async def help(ctx):
+async def index(ctx):
     embed = create_embed(
         "SynthX Payment Bot - Help",
         "Here are all the available commands for the SynthX Payment System:"
