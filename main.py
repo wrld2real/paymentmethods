@@ -33,7 +33,7 @@ intents.message_content = True
 bot = commands.Bot(command_prefix='!', intents=intents)
 
 # Editable Payment Information
-SYNTHX_PRICE = 13.50  # Base price in EUR
+SYNTHX_PRICE = 15.50  # Base price in EUR
 
 # Crypto payment information
 CRYPTO_WALLETS = {
@@ -59,15 +59,15 @@ PAYPAL_LINK = "paypal.me/wrld2real"
 
 # Gift Card information
 GIFT_CARDS = {
-    "Amazon": 15,
-    "Steam": 15,
-    "Xbox": 15,
+    "Amazon": 20,
+    "Steam": 20,
+    "Xbox": 20,
     "Roblox": 20,
 }
 
 # Paysafecard information
 PCS_LINK = "https://www.paysafecard.com"
-PCS_PRICE = 15
+PCS_PRICE = 20
 
 # Bot event handlers
 @bot.event
